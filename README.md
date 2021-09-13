@@ -1,8 +1,8 @@
 # Netflix-API-TMDB
 Segundo parcial - Desarrollo Web
 
-Con el proyecto facilitado, debe de diseñar una interface para filtrar perliculas, algunos de los filtros pueden ser:
-- Filtrar por o o más génerons.
+Con el proyecto facilitado, debe de diseñar una interface para filtrar peliculas, algunos de los filtros pueden ser:
+- Filtrar por o o más géneros.
 - Por año de estreno
 - Clasificación (R, PG13, etc)
 - Investigue la forma de que los resultados salgan en español, nombre de la película, descripción etc.
