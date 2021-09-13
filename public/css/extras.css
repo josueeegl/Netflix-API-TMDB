@@ -26,16 +26,21 @@
 #filtros {
   width: 100%;
   margin-top: 10px;
-  height: 100px;
+  height: 600px;
   display: none;
-  transition: height 0.8s;
 }
 .filtrados {
   margin: 10px;
   float: left;
   width: 180px;
 }
-.filtrados p {
+.pFiltros {
   color: white;
   font-weight: bold;
+}
+
+.pGeneros {
+  font-weight: normal;
+  margin-top: 10px;
+  color: rgb(255, 255, 255, 0.5);
 }

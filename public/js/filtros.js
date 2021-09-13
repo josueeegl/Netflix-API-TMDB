@@ -11,3 +11,12 @@ function filtros() {
     }
 
 }
+
+//Agregamos los generos en el div categorias de filtrado
+var div = document.getElementById('flCategoria');
+const categoria_filtros = (id, genres) => {
+    div.innerHTML += `<p class="pGeneros">
+    <input type="checkbox" name="${genres}" value="${id}" />
+    ${genres}
+  </p>`;
+}

@@ -1,3 +1,4 @@
+
 // aca obtengo los generos
 fetch(genres_list_http + new URLSearchParams({
         api_key: api_key,
@@ -7,7 +8,7 @@ fetch(genres_list_http + new URLSearchParams({
         data.genres.forEach(item => {
             console.log(item);
             fetchMovieListByGenres(item.id, item.name); //le paso el id y el name del genero
-
+            categoria_filtros(item.id, item.name);
         })
     })
 
