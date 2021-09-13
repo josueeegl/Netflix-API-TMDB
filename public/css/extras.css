@@ -1,0 +1,41 @@
+.linea {
+  margin-top: 15px;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+.imgFilter {
+  height: 50px;
+}
+.lbl {
+  position: relative;
+  top: -15px;
+  font-size: 15px;
+  color: rgb(255, 255, 255, 0.8);
+}
+.btnFiltros {
+  width: 150px;
+  cursor: pointer;
+}
+.btnFiltros:hover .lbl {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#filtros {
+  width: 100%;
+  margin-top: 10px;
+  height: 100px;
+  display: none;
+  transition: height 0.8s;
+}
+.filtrados {
+  margin: 10px;
+  float: left;
+  width: 180px;
+}
+.filtrados p {
+  color: white;
+  font-weight: bold;
+}

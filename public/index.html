@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Super NetFlix Jutiapa 2021</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/extras.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -20,11 +21,48 @@
     <header class="main">
       <h1>Peliculas</h1>
       <p class="info">Peliculas que nos hacen reir, llorar, etc...</p>
-      
+      <br />
+      <br />
+      <div class="btnFiltros" onclick="filtros()">
+        <img src="img/filter3.png" class="imgFilter" />
+        <label class="lbl">FILTROS</label>
+      </div>
+
+      <!--Filtro-->
+      <div id="filtros">
+        <div class="filtrados" id="flCategoria">
+          <p>CATEGORIAS</p>
+          <div class="linea"></div>
+        </div>
+        <div class="filtrados" id="flFecha">
+          <p>LANZAMIENTO</p>
+          <div class="linea"></div>
+        </div>
+        <div class="filtrados" id="flTipo">
+          <p>TIPO</p>
+          <div class="linea"></div>
+        </div>
+        <div class="filtrados" id="flClasificacion">
+          <p>CLASIFICACIÓN</p>
+          <div class="linea"></div>
+        </div>
+        <div class="filtrados" id="flIdioma">
+          <p>IDIOMA</p>
+          <div class="linea"></div>
+        </div>
+        <div class="filtrados" id="flVer">
+          <p>VER POR</p>
+          <div class="linea"></div>
+        </div>
+      </div>
+      <!-- fin Filtro-->
+
+      <div class="linea"></div>
     </header>
     <!--Scripts-->
     <script defer src="js/api.js"></script>
     <script defer src="js/scroll.js"></script>
     <script defer src="js/home.js"></script>
+    <script defer src="js/filtros.js"></script>
   </body>
 </html>
