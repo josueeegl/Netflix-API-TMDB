@@ -1,26 +1,27 @@
-
+var soli = api_base + movie_genres_http + new URLSearchParams({
+    api_key: api_key,
+    page: Math.floor(Math.random() * 3) + 1,
+    language: lenguage
+})
 // aca obtengo los generos
 fetch(genres_list_http + new URLSearchParams({
         api_key: api_key,
         language: lenguage
     }))
     .then(res => res.json()).then(data => {
+
         data.genres.forEach(item => {
             console.log(item);
-            fetchMovieListByGenres(item.id, item.name); //le paso el id y el name del genero
-            categoria_filtros(item.id, item.name);
+            fetchMovieListByGenres(soli, item.id, item.name); //le paso el id y el name del genero
+            categoria_filtros(item.id, item.name, data.genres);
         })
     })
 
 // obtengo las peliculas por genero
-const fetchMovieListByGenres = (id, genres) => {
-    fetch(movie_genres_http + new URLSearchParams({
-            api_key: api_key,
-            with_genres: id,
-            page: Math.floor(Math.random() * 3) + 1,
-            language: lenguage
-        })).then(res => res.json()).then(data => {
+const fetchMovieListByGenres = (api, id, genres) => {
+    fetch(`${api}&with_genres=${id}`).then(res => res.json()).then(data => {
             // se envian las peliculas por categoria
+
             makeCategoryElement(genres, data.results);
 
         })
