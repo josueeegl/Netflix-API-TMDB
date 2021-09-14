@@ -54,4 +54,41 @@
   color: rgb(255, 255, 255, 0.5);
   position: relative;
   top: 20px;
+  font-size: 20px;
+}
+
+.fTipo {
+  margin-top: 20px;
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.btnCancelar {
+  position: relative;
+  top: 70px;
+  border: 0px;
+  background-color: transparent;
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+.btnCancelar:hover {
+  color: #fff;
+}
+
+.btnGuardar {
+  position: relative;
+  width: 150px;
+  top: 80px;
+  border: 0px;
+  background-color: rgba(251, 35, 35, 0.726);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btnGuardar:hover {
+  background-color: rgb(251, 35, 35);
 }

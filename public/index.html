@@ -35,38 +35,79 @@
           <p class="pFiltros">CATEGORIAS</p>
           <div class="linea"></div>
         </div>
-        <!--Fin categorias-->
+        <!--Fin-->
+
         <!--Filtro año de lanzamiento-->
         <div class="filtrados" id="flFecha">
           <p class="pFiltros">LANZAMIENTO</p>
           <div class="linea"></div>
           <label class="fLanzamiento"
             >Año:
-            <select name="fYear" id="fYear">
-            </select>
+            <select name="fYear" id="fYear"></select>
           </label>
         </div>
-        <!--Fin año de lanzamiento-->
+        <!--Fin-->
+
+        <!--Filtro por tipo-->
         <div class="filtrados" id="flTipo">
           <p class="pFiltros">TIPO</p>
           <div class="linea"></div>
+          <p class="fTipo">
+            <input type="radio" name="tipo" required value="pelis" />
+            Peliculas
+          </p>
+          <p class="fTipo">
+            <input type="radio" name="tipo" required value="series" />
+            Series de TV
+          </p>
         </div>
+        <!--Fin-->
+
+        <!--Filtro para adultps-->
         <div class="filtrados" id="flClasificacion">
           <p class="pFiltros">CLASIFICACIÓN</p>
           <div class="linea"></div>
+
+          <p class="fTipo">
+            <input type="checkbox" name="adulto" value="adulto" />
+            R - adultos
+          </p>
         </div>
-        <div class="filtrados" id="flIdioma">
-          <p class="pFiltros">IDIOMA</p>
-          <div class="linea"></div>
-        </div>
+        <!--Fin-->
+
+        <!--Filtro ordenar por-->
         <div class="filtrados" id="flVer">
-          <p class="pFiltros">VER POR</p>
+          <p class="pFiltros">ORDENAR POR</p>
           <div class="linea"></div>
+          <p class="fTipo">
+            <input type="radio" name="ordenar" required value="xtitulo" />
+            Titulo
+          </p>
+          <p class="fTipo">
+            <input type="radio" name="ordenar" required value="xpopularidad" />
+            Popularidad
+          </p>
+          <p class="fTipo">
+            <input type="radio" name="ordenar" required value="xfechaASC" />
+            Fecha de lanzamiento Asc.
+          </p>
+          <p class="fTipo">
+            <input type="radio" name="ordenar" required value="xfechaDESC" />
+            Fecha de lanzamiento Desc.
+          </p>
+        </div>
+        <!--Fin-->
+        <div class="filtrados">
+          <button class="btnCancelar" onclick="location.reload();">
+            LIMPIAR
+          </button>
+          <br />
+          <button class="btnGuardar">GUARDAR</button>
         </div>
       </div>
-      <!-- fin Filtro-->
 
       <div class="linea"></div>
+      <!-- fin Filtro-->
     </header>
     <!--Scripts-->
     <script defer src="js/api.js"></script>

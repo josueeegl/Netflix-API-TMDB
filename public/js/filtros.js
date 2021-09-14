@@ -21,7 +21,7 @@ const categoria_filtros = (id, genres) => {
   </p>`;
 }
 
-//LLenar de años el selectColor
+//LLenar de años el select
 var myDate = new Date();
 var año = myDate.getFullYear();
 var year = document.getElementById('fYear');
@@ -30,6 +30,5 @@ const llenar_select = () => {
         year.innerHTML += `<option value="${i}" selected="selected">${i}
         </option>`;
     }
-
 }
 llenar_select();
