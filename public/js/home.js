@@ -53,8 +53,10 @@ const makeCards = (id, data) => {
                 return;
             }
         }
-        if(item.title == null) { item.title = item.name }
-        
+        if (item.title == null) {
+            item.title = item.name
+        }
+
         movieContainer.innerHTML += `<div class="movie" onclick="location.href = '/${item.id}'">
         <img src="${img_url}${item.backdrop_path}" alt="" />
         <p class="movie-title">${item.title}</p>

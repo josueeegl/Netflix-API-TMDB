@@ -4,6 +4,7 @@ fetch(
         `${movie_detail_http}${movie_id}?` +
         new URLSearchParams({
             api_key: api_key,
+            language: lenguage,
         })
     )
     .then((res) => res.json())
@@ -50,6 +51,7 @@ fetch(
         `${movie_detail_http}${movie_id}/credits?` +
         new URLSearchParams({
             api_key: api_key,
+            language: lenguage,
         })
     )
     .then((res) => res.json())
@@ -88,6 +90,7 @@ fetch(
         `${movie_detail_http}${movie_id}/recommendations?` +
         new URLSearchParams({
             api_key: api_key,
+            language: lenguage,
         })
     )
     .then((res) => res.json())
