@@ -64,6 +64,10 @@ const evaluar_tipo = () => {
         solicitud_filtro = api_base + movie_genres_http;
     } else if (valor == 'series') {
         solicitud_filtro = api_base + tv_genres_http;
+    } else if (valor == 'mejor') {
+        solicitud_filtro = api_base + api_mejor_calificadas;
+    } else if (valor == 'proxima') {
+        solicitud_filtro = api_base + api_proximamente;
     }
 }
 

@@ -56,8 +56,16 @@
 
       <!--Filtro por tipo-->
       <div class="filtrados" id="flTipo">
-        <p class="pFiltros">TIPO</p>
+        <p class="pFiltros">DESCUBRIR</p>
         <div class="linea"></div>
+        <p class="fTipo">
+          <input type="radio" name="tipo" required value="mejor" />
+          Mejor calificadas
+        </p>
+        <p class="fTipo">
+          <input type="radio" name="tipo" required value="proxima" />
+          Proximamente
+        </p>
         <p class="fTipo">
           <input type="radio" name="tipo" required value="pelis" />
           Peliculas
@@ -83,14 +91,25 @@
 
       <!--Filtro ordenar por-->
       <div class="filtrados" id="flVer">
-        <p class="pFiltros">ORDENAR POR</p>
+        <p class="pFiltros">VER POR</p>
         <div class="linea"></div>
+
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="&sort_by=original_title.desc" />
+          <input
+            type="radio"
+            name="ordenar"
+            required
+            value="&sort_by=original_title.desc"
+          />
           Titulo
         </p>
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="&sort_by=popularity.desc" />
+          <input
+            type="radio"
+            name="ordenar"
+            required
+            value="&sort_by=popularity.desc"
+          />
           Popularidad
         </p>
         <p class="fTipo">
