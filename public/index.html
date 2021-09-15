@@ -86,19 +86,29 @@
         <p class="pFiltros">ORDENAR POR</p>
         <div class="linea"></div>
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="xtitulo" />
+          <input type="radio" name="ordenar" required value="&sort_by=original_title.desc" />
           Titulo
         </p>
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="xpopularidad" />
+          <input type="radio" name="ordenar" required value="&sort_by=popularity.desc" />
           Popularidad
         </p>
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="xfechaASC" />
+          <input
+            type="radio"
+            name="ordenar"
+            required
+            value="&sort_by=primary_release_date.asc"
+          />
           Fecha de lanzamiento Asc.
         </p>
         <p class="fTipo">
-          <input type="radio" name="ordenar" required value="xfechaDESC" />
+          <input
+            type="radio"
+            name="ordenar"
+            required
+            value="&sort_by=primary_release_date.desc"
+          />
           Fecha de lanzamiento Desc.
         </p>
       </div>

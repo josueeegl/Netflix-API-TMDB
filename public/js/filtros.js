@@ -101,10 +101,18 @@ const para_adultos = () => {
     }
 }
 
+//Por orden de... 
+const ver_por = () => {
+    var value_ordenar = document.getElementsByName('ordenar');
+    for (let i = 0; i < value_ordenar.length; i++) {
+        if (value_ordenar[i].checked) { //Si se ha seleccionado pelicula o serie
+            solicitud_filtro += value_ordenar[i].value;
+            verificar = 1;
+        }
+    }
+}
 
-
-
-
+//////////////////////////////////////////
 
 // Está funcion aplicara todos los cambios elegidos en la seccion filtros
 const aplicando_cambios = () => {
@@ -121,6 +129,7 @@ const aplicando_cambios = () => {
     });
     por_fecha();
     para_adultos();
+    ver_por();
     if (verificar == 1) {
         document.querySelector('.main').innerHTML = main0;
         if (verificar_generos == 1) {
