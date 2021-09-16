@@ -22,6 +22,20 @@ const categoria_filtros = (id, genres, data) => {
   </p>`;
     data_genres = data;
 }
+//Agregamos los generos en el div categorias de filtrado
+var div_clasificacion = document.getElementById('flClasificacion');
+const agregar_clasificaciones = () => {
+    fetch('https://api.themoviedb.org/3/certification/movie/list?api_key=71af66658989368f32199a9e2250ec32')
+        .then(res => res.json()).then(data => {
+            data.certifications.US.forEach(item => {
+                div_clasificacion.innerHTML += `<p class="fTipo">
+                <input type="radio" name="clasificacion" required value="&certification_country=US&certification=${item.certification}" />
+                ${item.certification}
+              </p>`;
+            })
+        })
+}
+agregar_clasificaciones();
 
 //LLenar de años el select
 var myDate = new Date();
@@ -99,10 +113,14 @@ const por_fecha = () => {
 
 //Clasificacion para adultos
 const para_adultos = () => {
-    if (document.getElementById('fadulto').checked) {
-        solicitud_filtro += '&include_adult=true';
-        verificar = 1;
+    var value_clasificacion = document.getElementsByName('clasificacion');
+    for (let i = 0; i < value_clasificacion.length; i++) {
+        if (value_clasificacion[i].checked) {
+            solicitud_filtro += value_clasificacion[i].value;
+            verificar = 1;
+        }
     }
+
 }
 
 //Por orden de... 
