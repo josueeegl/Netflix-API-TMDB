@@ -120,7 +120,6 @@ const para_adultos = () => {
             verificar = 1;
         }
     }
-
 }
 
 //Por orden de... 
@@ -134,7 +133,7 @@ const ver_por = () => {
     }
 }
 
-//////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 
 // Está funcion aplicara todos los cambios elegidos en la seccion filtros
 const aplicando_cambios = () => {
