@@ -1,5 +1,5 @@
 # Netflix-API-TMDB
-Segundo parcial - Desarrollo Web
+
 
 Con el proyecto facilitado, debe de diseñar una interface para filtrar peliculas, algunos de los filtros pueden ser:
 - Filtrar por o o más géneros.
